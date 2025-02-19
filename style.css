@@ -47,6 +47,162 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /** Your CSS Below **/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--clr-stone100);
+  color: var(--clr-stone600);
+  min-height: 100vh;
+  font-family:var(--fs-base);
+  line-height: 1.4;
+  display: grid;
+  place-content: center;
+}
+
+.container {
+  max-width: 800px;
+  background-color: white;
+  margin: 2rem;
+  border-radius: 1rem;
+}
+
+.Recipe-Steps {
+  margin: 1rem 0;
+}
+
+ul {
+  padding-left: 1.25rem;
+}
+
+ol{
+  padding-left: 1.25rem;
+}
+
+.container .recipe-image {
+  padding: 2rem;
+  border-radius: 1rem;
+  overflow: hidden;
+} 
+
+.container .recipe-image img{
+  border-radius: 1rem;
+}
+
+.recipeinfo {
+  padding: 0rem 2rem 2rem 2rem;
+}
+
+.recipeinfo p {
+  margin-bottom: 0.5rem;
+  font-size: var(--font-paragraph);
+}
+
+img{
+  max-width: 100%;
+  display: block;
+}
+.prep {
+  background-color: var(--clr-rose50);
+  padding: 1.25rem;
+  border-radius: 1rem;
+  margin-top: 30px;
+}
+.prep ul li {
+  padding: 5px 5px 5px 15px;
+}
+
+.prep ul li::marker{
+  color: var(--clr-rose800);
+}
+
+.Ingredients {
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.Ingredients li::marker {
+  color: var(--clr-brown800);
+}
+
+.Ingredients li {
+  margin-bottom: .5rem;
+  padding: 0px 15px;
+}
+
+.Instructions {
+  padding-left: .5rem;
+  margin-bottom: .5rem;
+  display: flex;
+}
+
+.Instructions ol li{
+  margin-bottom: .5rem;
+  padding: 5px 5px 5px 15px;
+}
+
+.Instructions ol li::marker {
+  color: var(--clr-brown800);
+  margin-right: 1rem;
+  font-weight: 700;
+}
+
+h1 {
+  color: var(--clr-stone900);
+  font-size: 2.8rem;
+  font-family: var(--fs-accent);
+  font-weight: 400;
+  font-size: var(--font-header);
+}
+
+h2 {
+  color: var(--clr-brown800);
+  margin-bottom: 1rem;
+  font-family: var(--fs-accent);
+  font-weight: 400;
+  font-size: var(--font-sub-header);
+}
+
+h3 {
+  color: var(--clr-rose800);
+  margin-bottom: .75rem;
+}
+
+hr {
+  margin: 1.5rem 0;
+  border: 1px solid var(--clr-stone150);
+}
+
+.Macros {
+  /* display: flex; */
+  /* padding: .75rem 2rem;
+  width: 100px;
+  margin-right: auto; */
+}
+
+.listItem {
+  display: flex;
+  /* border-bottom: 2px solid var(--clr-stone150); */
+}
+
+.listName {
+  width: 100px;
+  margin-right: auto
+}
+
+.listValue {
+  color: var(--clr-brown800);
+  font-weight: var(--fw-bold);
+  width: 100px;
+  margin-right: auto;
+}
+
+.Recipe-Steps hr {
+  margin: 1rem 0rem;
+}
 
 /** Attribution CSS **/
 .attribution { font-size: 11px; text-align: center; }
